@@ -46,6 +46,6 @@ PREFIX hl7: <http://www.HL7.org/segment#>
 =======================================================================================
 | hl7:PATID1231 | "WILLIAM" | "JONES"    | "ABDMNAL PAIN UNSPCF SITE"                 |
 | hl7:PATID1231 | "WILLIAM" | "JONES"    | "Postoperative nausea and vomiting"        |
-| hl7:          | "ADAM"    | "EVERYMAN" | "Chemotherapy-induced nausea and vomiting" |
+| hl7:191919    | "ADAM"    | "EVERYMAN" | "Chemotherapy-induced nausea and vomiting" |
 ---------------------------------------------------------------------------------------
 ```
