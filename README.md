@@ -1,6 +1,6 @@
 # Hl7ToRDF-Healthcare data converter.
 
-Hl7ToRDF Data Converter: This library converts a set of hl7 v2.x message to RDF format.
+Hl7ToRDF Data Converter: This library converts a set of hl7 v2.x messages to RDF format.
 Here is an example of a SPARQL query that can be applied in converted data.
 
 **HL7 message 1**
