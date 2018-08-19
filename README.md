@@ -40,11 +40,12 @@ PREFIX hl7: <http://www.HL7.org/segment#>
 
 Result
 
-```
---------------------------------------------------------------------------------
-| patient       | GivenName | FamilyName | diagnosis                           |
-================================================================================
-| hl7:PATID1231 | "WILLIAM" | "JONES"    | "ABDMNAL PAIN UNSPCF SITE"          |
-| hl7:PATID1231 | "WILLIAM" | "JONES"    | "Postoperative nausea and vomiting" |
---------------------------------------------------------------------------------
-```
+
+---------------------------------------------------------------------------------------
+| patient       | GivenName | FamilyName | diagnosis                                  |
+=======================================================================================
+| hl7:PATID1231 | "WILLIAM" | "JONES"    | "ABDMNAL PAIN UNSPCF SITE"                 |
+| hl7:PATID1231 | "WILLIAM" | "JONES"    | "Postoperative nausea and vomiting"        |
+| hl7:          | "ADAM"    | "EVERYMAN" | "Chemotherapy-induced nausea and vomiting" |
+---------------------------------------------------------------------------------------
+
