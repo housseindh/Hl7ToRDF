@@ -3,7 +3,7 @@
 Hl7ToRDF Data Converter: This library converts a set of hl7 v2.x message to RDF format.
 Here is an example of a SPARQL query that can be applied in converted data.
 
-HL7 message 1
+**HL7 message 1**
 ```
 MSH|^~\&|ADT1|MCM|LABADT|MCM|198808181126|SECURITY|ADT^A01|MSG00001-|P|2.5.1
 EVN|A01|198808181123
@@ -15,7 +15,7 @@ DG1|1||78900^ABDMNAL PAIN UNSPCF SITE^I9CDX|||W
 DG1|3||1488000^Postoperative nausea and vomiting^SCT|||W
 
 ```
-HL7 message 2
+**HL7 message 2**
 ```
 MSH|^~\&|REGADT|GOOD HEALTH HOSPITAL|GHH LAB||200712311501||ADT^A04^ADT_A01|000001|P|2.6|||
 EVN|A04|200701101500|200701101400|01||200701101410
@@ -24,7 +24,7 @@ OBX||ST|1010.1^BODY WEIGHT||62|kg|||||F\r\n" + "OBX||ST|1010.1^HEIGHT||190|cm|||
 DG1|1||236084000^Chemotherapy-induced nausea and vomiting^SCT|||W
 ```
 
-SPARQL query
+**SPARQL query**
 ```
 PREFIX hl7: <http://www.HL7.org/segment#> 
 		SELECT DISTINCT ?patient ?GivenName ?FamilyName ?diagnosis 
@@ -38,9 +38,9 @@ PREFIX hl7: <http://www.HL7.org/segment#>
       }
 ```
 
-Result
+**Result**
 
-
+```
 ---------------------------------------------------------------------------------------
 | patient       | GivenName | FamilyName | diagnosis                                  |
 =======================================================================================
@@ -48,4 +48,4 @@ Result
 | hl7:PATID1231 | "WILLIAM" | "JONES"    | "Postoperative nausea and vomiting"        |
 | hl7:          | "ADAM"    | "EVERYMAN" | "Chemotherapy-induced nausea and vomiting" |
 ---------------------------------------------------------------------------------------
-
+```
