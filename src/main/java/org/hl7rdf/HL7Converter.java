@@ -60,13 +60,14 @@ public class HL7Converter {
 
     private  String findPID(final Group group) throws HL7Exception {
     	try {
-    		Segment pid =(PID) group.getAll("PID")[0];
+    		Segment pid =(Segment) group.getAll("PID")[0];
     		Map<String,Type> segmentPid= createFields(pid);
     		Map<String, Type> componentId = createComponents(segmentPid.get("PatientIdentifierList"));
     		
     		
 			return componentId.get("IDNumber").toString();
 		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
     	
         if (!isEmpty(group)) {
