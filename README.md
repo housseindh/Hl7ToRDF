@@ -20,7 +20,7 @@ DG1|3||1488000^Postoperative nausea and vomiting^SCT|||W
 MSH|^~\&|REGADT|GOOD HEALTH HOSPITAL|GHH LAB||200712311501||ADT^A04^ADT_A01|000001|P|2.6|||
 EVN|A04|200701101500|200701101400|01||200701101410
 PID|||191919^^^GOOD HEALTH HOSPITAL^MR^GOOD HEALTH HOSPITAL^^^USSSA^SS|253763|EVERYMAN^ADAM^A||19560129|M|||2222 HOME STREET^^ISHPEMING^MI^49849^\"\"^||555-555-2004|555-555- 2004||S|CHR|10199925^^^GOOD HEALTH HOSPITAL^AN|371-66-9256||
-OBX||ST|1010.1^BODY WEIGHT||62|kg|||||F\r\n" + "OBX||ST|1010.1^HEIGHT||190|cm|||||F
+OBX||ST|1010.1^BODY WEIGHT||62|kg|||||F
 DG1|1||236084000^Chemotherapy-induced nausea and vomiting^SCT|||W
 ```
 
@@ -32,7 +32,8 @@ PREFIX hl7: <http://www.HL7.org/segment#>
 			?PatientName hl7:GivenName ?GivenName.
 			?PatientName hl7:FamilyName ?FamilyName.
 			?PID hl7:PatientName ?PatientName. 
-			?patient hl7:PID ?PID ." + "?patient hl7:DG1 ?DG1. 
+			?patient hl7:PID ?PID .
+			?patient hl7:DG1 ?DG1. 
 			?DG1 hl7:DiagnosisCodeDG1  ?Identifier1.
 			?Identifier1 hl7:Text ?diagnosis
       }
